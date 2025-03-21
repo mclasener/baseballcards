@@ -10,14 +10,7 @@
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
         <!-- HIRO-marker -->
         <a-marker preset="hiro">
-            <!-- Klikbare afbeelding -->
-            <a-image 
-                src="https://mclasener.github.io/baseballcards/Niels.png" 
-                position="0 0.5 0" 
-                width="1" 
-                height="1.5" 
-                onclick="window.open('https://www.orioles.nl', '_blank');">
-            </a-image>
+            <a-box position="0 0.5 0" material="color: red;"></a-box>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
