@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/1.7.2/aframe/build/aframe-ar-nft.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
 </head>
 <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="trackingMethod: nft; sourceType: webcam;">
-        <!-- NFT-marker (visitekaartje) -->
-        <a-nft type="nft" url="https://mclasener.github.io/baseballcards/BaseballCardsOrioles.fset" crossorigin="anonymous">
-            <!-- Foto rechtop op het visitekaartje -->
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
+        <!-- HIRO-marker -->
+        <a-marker preset="hiro">
+            <!-- Klikbare afbeelding -->
             <a-image 
                 src="https://mclasener.github.io/baseballcards/Niels.png" 
-                position="0 0 0" 
+                position="0 0.5 0" 
                 width="1" 
-                height="2.5" 
-                rotation="-90 0 0" 
+                height="1.5" 
                 onclick="window.open('https://www.orioles.nl', '_blank');">
             </a-image>
-        </a-nft>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
